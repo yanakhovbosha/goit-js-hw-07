@@ -15,17 +15,12 @@ console.log(`Number of categories: ${total}`);
 
 
 
-
 itemEl.forEach(function(item) {
     const titleCategories = item.querySelector("h2");
     const resultTitle = titleCategories.textContent;
-    // const listItemCategoriesEl = item.querySelectorAll(".list-item-categories");
-    // const resultEl = listItemCategoriesEl.length;
+    const resultEl = item.querySelector(".list-item-categories").children;
+    const ChildEl = resultEl.length;
+    
     console.log(`Category: ${resultTitle}`);
-    // console.log(`Elements: ${resultEl}`);
+    console.log(`Elements: ${ChildEl}`);
 });
-
-
-
-
-

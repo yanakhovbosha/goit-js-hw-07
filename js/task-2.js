@@ -25,18 +25,20 @@ const images = [
   }
 ];
 
-// const galleryImg = document.querySelector(".gallery");
-
-// function galleryImages(arr){
+const listImg = document.querySelector(".gallery");
   
-//   return arr.map(img => {
-//   const image = document.createElement("img");
-//   image.url = images.url;
-//   image.alt = images.alt;
+const imgTotal = images.map(img => {
+  const itemImg = document.createElement("li");
+  listImg.append(itemImg);
+  const image = document.createElement("img");
+  
+  image.src = img.url;
+  image.alt = img.alt;
+  image.width = 360;
+  image.height = 300;
+  itemImg.append(image);
+  return itemImg
+});
 
-//   return image
-// });
-// }
 
-
-// galleryImg.append(...galleryImages(galleryImg));
+console.log(listImg);
