@@ -6,9 +6,9 @@ const userName = document.querySelector("#name-output");
 inputEl.addEventListener("input", inputUserNameTotal);
 
 function inputUserNameTotal(event) {
-    if (userName.textContent !== "") {
-        return `Hello, ${userName.textContent}!`
+    if (inputEl.value === "") {
+        userName.textContent = "Anonymous";
+    } else {
+        userName.textContent = inputEl.value;
     }
-    return `Hello, Anonymous!`
 };
-console.log(inputUserNameTotal(event));
