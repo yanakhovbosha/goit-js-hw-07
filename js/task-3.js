@@ -3,27 +3,15 @@ const inputEl = document.querySelector("#name-input");
 const userName = document.querySelector("#name-output");
 
 
+// console.log(userName);
 
 
-    
 
-
-inputEl.addEventListener("input", inputUserNameTotal);
-    // userName.textContent = event.target.value;
-    // if(userName === "") {
-    //     return userName;
-    // } else {
-    //     return userName.trim();
-    // }
-// function inputUserNameTotal(event) {
-//     event.preventDefault();
-//     const totalEl = userName.trim();
-//     if(totalEl === ""){
-//         return `Hello, ${userName}!`
-//     } else {
-//         return `Hello, Anonymous!`
+// inputEl.addEventListener("input", event => {
+//     if(inputEl.textContent !== "") {
+//         console.log(`Hello, ${event.target.value}`);
+        
 //     }
-//     console.log(totalEl);
-// };
+//     console.log(`Hello, Anonymous!`);
+// });
 
-// console.log();
