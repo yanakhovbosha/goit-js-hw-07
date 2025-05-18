@@ -3,15 +3,12 @@ const inputEl = document.querySelector("#name-input");
 const userName = document.querySelector("#name-output");
 
 
-// console.log(userName);
+inputEl.addEventListener("input", inputUserNameTotal);
 
-
-
-// inputEl.addEventListener("input", event => {
-//     if(inputEl.textContent !== "") {
-//         console.log(`Hello, ${event.target.value}`);
-        
-//     }
-//     console.log(`Hello, Anonymous!`);
-// });
-
+function inputUserNameTotal(event) {
+    if (userName.textContent !== "") {
+        return `Hello, ${userName.textContent}!`
+    }
+    return `Hello, Anonymous!`
+};
+console.log(inputUserNameTotal(event));
