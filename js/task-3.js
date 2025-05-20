@@ -9,6 +9,6 @@ function inputUserNameTotal(event) {
     if (inputEl.value === "") {
         userName.textContent = "Anonymous";
     } else {
-        userName.textContent = inputEl.value;
+        userName.textContent = inputEl.value.trim();
     }
 };

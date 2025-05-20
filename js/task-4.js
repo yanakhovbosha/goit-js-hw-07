@@ -7,10 +7,10 @@ form.addEventListener("submit", event => {
         email: elem.email.value,
         password: elem.password.value,
     };
-    console.log(info);
     if(info.email.trim() === "" || info.password.trim() === "") {
         alert("All form fields must be filled in");
         return
     }
+    console.log(info);
     event.target.reset();
 })

@@ -37,7 +37,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-.list-item-categories {
+.item > ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
   
 }
 
-.list-item-categories > li {
+.item li {
   border: 1px solid #808080;
   border-radius: 4px;
   padding-top: 8px;

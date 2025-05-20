@@ -18,7 +18,7 @@ console.log(`Number of categories: ${total}`);
 itemEl.forEach(function(item) {
     const titleCategories = item.querySelector("h2");
     const resultTitle = titleCategories.textContent;
-    const resultEl = item.querySelector(".list-item-categories").children;
+    const resultEl = item.querySelector("ul").children;
     const ChildEl = resultEl.length;
     
     console.log(`Category: ${resultTitle}`);

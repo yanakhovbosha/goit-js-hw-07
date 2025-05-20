@@ -25,13 +25,12 @@ const images = [
   }
 ];
 
+
 const listImg = document.querySelector(".gallery");
   
 const imgTotal = images.map(img => {
   const itemImg = document.createElement("li");
-  listImg.append(itemImg);
   const image = document.createElement("img");
-  
   image.src = img.url;
   image.alt = img.alt;
   image.width = 360;
@@ -40,5 +39,6 @@ const imgTotal = images.map(img => {
   return itemImg
 });
 
+listImg.append(...imgTotal);
 
 console.log(listImg);
